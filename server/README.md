@@ -1,4 +1,4 @@
-# Project blueprint-test
+# Tic Tac Toe - Server
 
 One Paragraph of project description goes here
 

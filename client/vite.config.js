@@ -7,7 +7,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         room: resolve(__dirname, "room/index.html"),
-        about: resolve(__dirname, "about/index.html"),
       },
     },
   },
