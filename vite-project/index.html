@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe - Waiting Room</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header class="flex items-center justify-between px-6 py-4">
+      <h1 class="text-3xl font-bold">Waiting Room</h1>
+    </header>
+
+    <main class="p-6 grid grid-cols-1 gap-6">
+      <section class="flex flex-col items-center gap-4">
+        <div
+          id="waiting-room"
+          class="w-full h-96 max-h-96 rounded-md text-black p-6 border"
+        >
+          <div class="flex items-center justify-center w-full h-full">
+            <p class="text-xl font-medium text-center">Loading games...</p>
+          </div>
+        </div>
+        <button
+          id="create-game-button"
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-lg font-medium mt-4 border-2 border-black h-10 px-4 py-2 text-black disabled:opacity-50"
+        >
+          Create Game
+        </button>
+      </section>
+    </main>
+
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe - Lobby</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header class="flex flex-col items-start justify-center px-6 py-4">
+      <div class="inline-flex justify-center items-center text-3xl gap-4">
+        <a href="/"><span>&LeftArrow;</span></a>
+        <h1 class="text-3xl font-bold">Lobby</h1>
+      </div>
+      <h2 class="text-lg font-medium">Test name</h2>
+    </header>
+
+    <main class="px-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <section class="w-60 sm:w-96">
+        <span class="inline-flex w-full justify-between mb-2 text-xl">
+          <p>You are &Xopf;'s</p>
+          <p>It's &bigcirc;'s turn</p>
+        </span>
+        <div
+          class="h-60 sm:h-96 border-black border-2 rounded-md grid grid-cols-3 grid-rows-3 gap-2 p-2"
+        >
+          <div
+            class="flex items-center justify-center border-black border rounded-sm cursor-default"
+          >
+            <p class="text-5xl sm:text-7xl select-none">&Xopf;</p>
+          </div>
+          <div
+            class="flex items-center justify-center border-black border rounded-sm cursor-default"
+          >
+            <p class="text-5xl sm:text-7xl select-none">&bigcirc;</p>
+          </div>
+          <div
+            class="flex items-center justify-center border-black border rounded-sm cursor-pointer"
+          ></div>
+
+          <div
+            class="flex items-center justify-center border-black border rounded-sm cursor-pointer"
+          ></div>
+          <div
+            class="flex items-center justify-center border-black border rounded-sm cursor-pointer"
+          ></div>
+          <div
+            class="flex items-center justify-center border-black border rounded-sm cursor-pointer"
+          ></div>
+
+          <div
+            class="flex items-center justify-center border-black border rounded-sm cursor-pointer"
+          ></div>
+          <div
+            class="flex items-center justify-center border-black border rounded-sm cursor-pointer"
+          ></div>
+          <div
+            class="flex items-center justify-center border-black border rounded-sm cursor-pointer"
+          ></div>
+        </div>
+      </section>
+      <section class="flex-1 w-60 sm:w-full mb-4">
+        <p class="text-xl mb-2">Room Chat</p>
+        <div
+          class="flex flex-col h-60 lg:h-96 border-black border-2 rounded-md"
+        >
+          <div class="flex-1 p-4"></div>
+          <div class="flex gap-2 h-20 p-4">
+            <input
+              type="text"
+              placeholder="Aa"
+              class="flex-1 w-4/5 sm:w-auto h-full border rounded-md px-2"
+            />
+            <button
+              onclick="console.log('Hello')"
+              class="w-1/5 sm:w-16 text-2xl border rounded-md"
+            >
+              &RightArrow;
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/room/room.ts"></script>
+  </body>
+</html>
